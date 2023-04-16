@@ -12,7 +12,7 @@ public class FunRestController {
     }
 
     @GetMapping("/workout")
-    public String sayBye() {
+    public String sayWorkout() {
         return "Run a hard 5k!";
     }
 }
