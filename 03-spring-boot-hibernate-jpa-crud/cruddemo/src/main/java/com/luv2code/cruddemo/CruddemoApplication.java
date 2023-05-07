@@ -25,8 +25,15 @@ public class CruddemoApplication {
 //            readStudent(studentDAO);
 //            queryForStudents(studentDAO);
 //            queryForStudentsByLastName(studentDAO);
-            updateStudent(studentDAO);
+//            updateStudent(studentDAO);
+            removeStudent(studentDAO);
         };
+    }
+
+    private void removeStudent(StudentDAO studentDAO) {
+        int id = 1;
+        Student studentToRemove = studentDAO.findById(id);
+        studentDAO.remove(studentToRemove);
     }
 
     private void updateStudent(StudentDAO studentDAO) {
