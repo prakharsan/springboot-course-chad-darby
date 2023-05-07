@@ -31,9 +31,8 @@ public class CruddemoApplication {
     }
 
     private void removeStudent(StudentDAO studentDAO) {
-        int id = 1;
-        Student studentToRemove = studentDAO.findById(id);
-        studentDAO.remove(studentToRemove);
+        int id = 3;
+        studentDAO.remove(id);
     }
 
     private void updateStudent(StudentDAO studentDAO) {
